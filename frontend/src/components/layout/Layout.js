@@ -4,15 +4,19 @@ import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col bg-surface-950">
-      <Navbar />
+    <div className="min-h-screen flex flex-col bg-mono-black text-mono-white relative overflow-x-hidden">
+      
+      {/* ── Outer wrapper ensuring strict monochrome visual alignment ── */}
+      <div className="flex-1 flex flex-col z-10">
+        <Navbar />
 
-      {/* Main Content Area */}
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {children}
-      </main>
+        {/* ── Main Content Container with strict maximum width & precise alignments ── */}
+        <main className="flex-1 w-full max-w-5xl mx-auto px-6 py-12 md:py-16">
+          {children}
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 };

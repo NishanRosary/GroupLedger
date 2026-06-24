@@ -1,42 +1,12 @@
 import React from 'react';
 import Layout from './components/layout/Layout';
+import Hero from './components/sections/Hero';
 
 function App() {
   return (
     <Layout>
-      {/* ── Hero Presentation Section ── */}
-      <section className="text-center py-10 md:py-16 animate-fade-in">
-        
-        {/* Strict Monochrome Logo Concept */}
-        <div className="inline-flex items-center justify-center p-0.5 bg-mono-border rounded mb-6">
-          <div className="w-12 h-12 bg-mono-white text-mono-black flex items-center justify-center font-black text-lg rounded-[2px] shadow-premium-sm">
-            GL
-          </div>
-        </div>
+      <Hero />
 
-        {/* Crisp Bold Typography */}
-        <h1 className="text-display text-mono-white uppercase tracking-tight mb-2">
-          GroupLedger
-        </h1>
-
-        {/* Subtitle with premium styling */}
-        <p className="text-body-lg md:text-title-md text-mono-muted font-light tracking-wide uppercase max-w-2xl mx-auto mb-8">
-          AI-Powered Expense Reconciliation Platform
-        </p>
-
-        {/* Micro Divider */}
-        <div className="h-px bg-mono-border w-24 mx-auto mb-10" />
-
-        {/* Action Controls (Strict Black and White) */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="mono-btn-primary px-8 py-3 rounded text-sm font-semibold tracking-wider uppercase">
-            Get Started
-          </button>
-          <button className="mono-btn-secondary px-8 py-3 rounded text-sm font-semibold tracking-wider uppercase">
-            Learn More
-          </button>
-        </div>
-      </section>
 
       {/* ── Minimalist Monochrome Info Deck ── */}
       <section className="mt-12 md:mt-20">
